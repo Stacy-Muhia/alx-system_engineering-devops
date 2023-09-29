@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#a bash scripth that displays its own pid
+
+echo $$
