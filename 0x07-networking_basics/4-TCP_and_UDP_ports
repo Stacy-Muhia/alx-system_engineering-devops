@@ -2,4 +2,4 @@
 #A bash shell that displays the listening ports only showing listening sockets and PID.
 
 
-sudo netstat -lp
+netstat -l --program
