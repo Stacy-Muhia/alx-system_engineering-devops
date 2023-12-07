@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash script that automates my fix
+# Making sure nginx is running
+
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sed -i 's/\(listen\s*[^:]*\):\([0-9]*\)/\1:80/' /etc/nginx/sites-available/default
+service nginx restart
