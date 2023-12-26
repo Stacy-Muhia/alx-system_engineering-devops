@@ -1,4 +1,2 @@
-rm: cannot remove '/etc/nginx/sites-enabled/default': No such file or directory
-ln: failed to create symbolic link '/etc/nginx/sites-enabled/default': No such file or directory
-sed: can't read /etc/nginx/sites-available/default: No such file or directory
-nginx: unrecognized service
+ * Restarting nginx nginx
+   ...fail!
