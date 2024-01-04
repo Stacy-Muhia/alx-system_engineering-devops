@@ -7,11 +7,12 @@ import sys
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/"
     users = requests.get(url + "users").json()
-
     with open("todo_all_employees.json", "w") as jsonfile:
-        json.dump({
-            u.get("id"): [{
-                "username": u.get("username"),
+        json.dump(
+            {
+                u.get("id"): [
+                    {
+                        "username": u.get("username"),
                         "task": task.get("title"),
                         "completed": task.get("completed")
                     }
